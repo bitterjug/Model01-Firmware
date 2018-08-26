@@ -138,10 +138,10 @@ enum { QWERTY, NUMPAD, FUNCTION }; // layers
 KEYMAPS(
 
   [QWERTY] = KEYMAP_STACKED
-  (___,                       Key_1, Key_2, Key_3, Key_4,        Key_5, Key_LEDEffectNext,
-   Key_Backtick,              Key_Q, Key_W, Key_E, Key_R,        Key_T, Key_Tab,
-   Key_PageUp,                Key_A, Key_S, Key_D, Key_F, Key_G,
-   Key_NonUsBackslashAndPipe, Key_Z, Key_X, Key_C, Key_V,        Key_B, Key_Escape,
+  (Key_Escape,                Key_1, Key_2, Key_3, Key_4, Key_5, Key_LEDEffectNext,
+   Key_Backtick,              Key_Q, Key_W, Key_E, Key_R, Key_T, Key_Tab,
+   Key_Escape,                Key_A, Key_S, Key_D, Key_F, Key_G,
+   Key_NonUsBackslashAndPipe, Key_Z, Key_X, Key_C, Key_V, Key_B, Key_Escape,
    Key_LeftControl,           Key_Backspace, Key_Spacebar, Key_LeftShift,
    ShiftToLayer(FUNCTION),
 
@@ -174,14 +174,14 @@ KEYMAPS(
    Key_Tab,  ___,              Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
    Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
    Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
-   ___, Key_Delete, ___, ___,
+   ___, Key_Delete, ___, Key_Enter,
    ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
    LSHIFT(Key_Semicolon),      Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    Key_Tab,                    Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
-   ___, ___, Key_Enter, ___,
+   ___, ___, Key_LeftAlt, Key_Enter,
    ___)
 
 	) // KEYMAPS(
@@ -392,6 +392,22 @@ KALEIDOSCOPE_INIT_PLUGINS(
  * Kaleidoscope and any plugins.
  */
 void setup() {
+  //Qukeys
+  QUKEYS(
+    // kaleidoscope::Qukey(0, 2, 1, Key_LeftGui),      // A/cmd
+    // kaleidoscope::Qukey(0, 2, 2, Key_LeftAlt),      // S/alt
+    // kaleidoscope::Qukey(0, 2, 3, Key_LeftControl),  // D/ctrl
+    kaleidoscope::Qukey(0, 2, 5, Key_LeftShift),    // G/shift
+    kaleidoscope::Qukey(0, 2, 0, Key_LeftControl),    // PgUp,Esc/Control
+    // kaleidoscope::Qukey(0, 2, 10, ShiftToLayer(1)),   // H/layer-shift (on `fn`)
+
+    kaleidoscope::Qukey(0, 3, 15, Key_LeftShift),    // Minus/shift
+    kaleidoscope::Qukey(0, 3, 0,  Key_LeftShift),    // PgDn,Backslash/shift
+    kaleidoscope::Qukey(0, 3, 0,  Key_LeftShift)    // PgDn,Backslash/shift
+  )
+  Qukeys.setTimeout(200);
+  Qukeys.setReleaseDelay(20);
+
   // First, call Kaleidoscope's internal setup function
   Kaleidoscope.setup();
 
