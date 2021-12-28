@@ -155,13 +155,15 @@ KEYMAPS(
    Key_Tab,        Key_Q, Key_W, Key_E, Key_R, Key_T, Key_Tab,
    Key_LeftControl,Key_A, Key_S, Key_D, Key_F, Key_G,
    Key_Backslash,  Key_Z, Key_X, Key_C, Key_V, Key_B, Key_Escape,
-   Key_LeftControl,Key_Backspace, Key_LeftGui, Key_LeftShift,
+
+   Key_LeftControl,Key_Backspace, Key_LeftAlt, Key_LeftShift,
    ShiftToLayer(LEFT_FUNCTION),
 
    M(MACRO_ANY),  Key_6, Key_7, Key_8,     Key_9,         Key_0,         Key_Minus,
    Key_Enter,     Key_Y, Key_U, Key_I,     Key_O,         Key_P,         Key_Equals,
                   Key_H, Key_J, Key_K,     Key_L,         Key_Semicolon, Key_NonUsPound,
-   Key_RightAlt,  Key_N, Key_M, Key_Comma, Key_Period,    Key_Slash,     Key_RightShift,
+   Key_LeftGui,  Key_N, Key_M, Key_Comma, Key_Period,    Key_Slash,     Key_RightShift,
+
    Key_RightShift, Key_LeftAlt, Key_Space, Key_RightControl,
    ShiftToLayer(RIGHT_FUNCTION)),
 
@@ -182,27 +184,30 @@ KEYMAPS(
    ___
    ),
 
-  [LEFT_FUNCTION] =  KEYMAP_STACKED
+[LEFT_FUNCTION] =  KEYMAP_STACKED
   (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_CapsLock,
    Key_Tab,  ___,              Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
    Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
    Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
-   ___, Key_Delete, ___, ___,
+  
+   ___, Key_Delete, Key_Backspace, ___,
    ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
    Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
-   ___, ___, Key_Enter, ___,
+
+   ___, ___, Key_Backspace, ___,
    ___
    ),
 
-  [RIGHT_FUNCTION] =  KEYMAP_STACKED
+[RIGHT_FUNCTION] =  KEYMAP_STACKED
   (___,      Key_F1,           Key_F2,      Key_F3,     Key_F4,        Key_F5,           Key_CapsLock,
    Key_Tab,  ___,              Key_mouseUp, ___,        Key_mouseBtnR, Key_mouseWarpEnd, Key_mouseWarpNE,
    Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
    Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
+
    ___, Key_Delete, ___, ___,
    ___,
 
@@ -210,6 +215,7 @@ KEYMAPS(
    Consumer_PlaySlashPause,    Consumer_ScanNextTrack, Key_LeftCurlyBracket,     Key_RightCurlyBracket,    Key_LeftBracket, Key_RightBracket, Key_F12,
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  Key_Quote,        ___,
    Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
+
    ___, ___, Key_Enter, ___,
    ___
    )
