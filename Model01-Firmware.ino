@@ -156,7 +156,7 @@ KEYMAPS(
    Key_LeftControl,Key_A, Key_S, Key_D, Key_F, Key_G,
    Key_Backslash,  Key_Z, Key_X, Key_C, Key_V, Key_B, Key_Escape,
 
-   Key_LeftControl,Key_Backspace, Key_LeftAlt, Key_LeftShift,
+   Key_LeftControl,Key_Space, Key_LeftAlt, Key_LeftShift,
    ShiftToLayer(LEFT_FUNCTION),
 
    M(MACRO_ANY),  Key_6, Key_7, Key_8,     Key_9,         Key_0,         Key_Minus,
@@ -190,7 +190,7 @@ KEYMAPS(
    Key_Home, Key_mouseL,       Key_mouseDn, Key_mouseR, Key_mouseBtnL, Key_mouseWarpNW,
    Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
   
-   ___, Key_Delete, Key_Backspace, ___,
+   ___,  Key_Backspace, ___, ___,
    ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
@@ -198,7 +198,7 @@ KEYMAPS(
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  ___,              ___,
    Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
 
-   ___, ___, Key_Backspace, ___,
+   ___, ___, Key_Delete, ___,
    ___
    ),
 
@@ -209,6 +209,7 @@ KEYMAPS(
    Key_End,  Key_PrintScreen,  Key_Insert,  ___,        Key_mouseBtnM, Key_mouseWarpSW,  Key_mouseWarpSE,
 
    ___, Key_Delete, ___, ___,
+
    ___,
 
    Consumer_ScanPreviousTrack, Key_F6,                 Key_F7,                   Key_F8,                   Key_F9,          Key_F10,          Key_F11,
@@ -216,7 +217,7 @@ KEYMAPS(
                                Key_LeftArrow,          Key_DownArrow,            Key_UpArrow,              Key_RightArrow,  Key_Quote,        ___,
    Key_PcApplication,          Consumer_Mute,          Consumer_VolumeDecrement, Consumer_VolumeIncrement, ___,             Key_Backslash,    Key_Pipe,
 
-   ___, ___, Key_Enter, ___,
+   ___, ___, Key_Backspace, ___,
    ___
    )
 ) // KEYMAPS(
