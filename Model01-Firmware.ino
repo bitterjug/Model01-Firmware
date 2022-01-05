@@ -207,10 +207,10 @@ KEYMAPS(
    ___,  Key_Backspace, ___, ___,
    ___,
 
-   Key_Insert,          Key_F6,         Key_F7,                Key_F8,                Key_F9,          Key_F10,               Key_F11,
-   ___,                 Key_PageUp,     Key_LeftCurlyBracket,  Key_RightCurlyBracket, Key_LeftBracket, Key_RightBracket,      Key_F12,
-                        Key_LeftArrow,  Key_DownArrow,         Key_UpArrow,           Key_RightArrow,  LSHIFT(Key_Semicolon),  LSHIFT(Key_Quote),
-   Key_PcApplication,   Key_PageDown,   Key_End,               Key_Home,              ___,             LSHIFT(Key_Slash),     Key_Pipe,
+   Key_Insert,        Key_F6,        Key_F7,                Key_F8,                Key_F9,          Key_F10,               Key_F11,
+   ___,               ___,           Key_LeftCurlyBracket,  Key_RightCurlyBracket, Key_LeftBracket, Key_RightBracket,      Key_F12,
+                      Key_LeftArrow, Key_DownArrow,         Key_UpArrow,           Key_RightArrow,  LSHIFT(Key_Semicolon), LSHIFT(Key_Quote),
+   Key_PcApplication, Key_Home,      Key_PageDown,          Key_PageUp,            Key_End,         LSHIFT(Key_Slash),     Key_Pipe,
 
    ___, ___, Key_Delete, ___,
    ___
