@@ -151,9 +151,9 @@ KEYMAPS(
   (Key_Backtick,              Key_1, Key_2, Key_3, Key_4, Key_5, Key_Delete,
    Key_Tab,                   Key_Q, Key_W, Key_E, Key_R, Key_T, Key_Tab,
    CTL_T(Escape),             Key_A, Key_S, Key_D, Key_F, Key_G,
-   Key_NonUsBackslashAndPipe, Key_Z, Key_X, Key_C, Key_V, Key_B, Key_Escape,
+   SFT_T(NonUsBackslashAndPipe), Key_Z, Key_X, Key_C, Key_V, Key_B, Key_Escape,
 
-   Key_LeftControl,Key_Space, Key_LeftAlt, Key_LeftShift,
+   Key_LeftControl,Key_Space, Key_LeftShift, Key_LeftAlt,
    ShiftToLayer(LEFT_FUNCTION),
 
    Key_Backspace,Key_6, Key_7, Key_8,     Key_9,      Key_0,         Key_Minus,
@@ -161,7 +161,7 @@ KEYMAPS(
                  Key_H, Key_J, Key_K,     Key_L,      Key_Semicolon, Key_Quote,
    Key_LeftGui,  Key_N, Key_M, Key_Comma, Key_Period, Key_Slash,     SFT_T(NonUsPound),
 
-   Key_RightShift, Key_LeftAlt, Key_Space, Key_RightControl,
+   Key_LeftAlt,  Key_RightShift,  Key_Space, Key_RightControl,
    ShiftToLayer(RIGHT_FUNCTION)),
 
 [NUMPAD] =  KEYMAP_STACKED
@@ -192,7 +192,7 @@ KEYMAPS(
    Key_CapsLock,      Key_F6,         Key_F7,                 Key_F8,                 Key_F9,          Key_F10,          Key_F11,
    ___,               Key_PageUp,     Key_LeftCurlyBracket,   Key_RightCurlyBracket,  Key_LeftBracket, Key_RightBracket, Key_F12,
                       Key_LeftArrow,  Key_DownArrow,          Key_UpArrow,            Key_RightArrow,  LSHIFT(Key_Semicolon),  LSHIFT(Key_Quote),
-   Key_PcApplication, Key_PageDown,   Key_End,                Key_Home,               ___,             Key_Backslash,    Key_Pipe,
+   Key_PcApplication, Key_PageDown,   Key_End,                Key_Home,               ___,             LSHIFT(Key_Slash),    Key_Pipe,
 
    ___, ___, Key_Backspace, ___,
    ___
@@ -207,10 +207,10 @@ KEYMAPS(
    ___,  Key_Backspace, ___, ___,
    ___,
 
-   Key_Insert,          Key_F6,         Key_F7,                Key_F8,                Key_F9,          Key_F10,          Key_F11,
-   ___,                 Key_PageUp,     Key_LeftCurlyBracket,  Key_RightCurlyBracket, Key_LeftBracket, Key_RightBracket, Key_F12,
+   Key_Insert,          Key_F6,         Key_F7,                Key_F8,                Key_F9,          Key_F10,               Key_F11,
+   ___,                 Key_PageUp,     Key_LeftCurlyBracket,  Key_RightCurlyBracket, Key_LeftBracket, Key_RightBracket,      Key_F12,
                         Key_LeftArrow,  Key_DownArrow,         Key_UpArrow,           Key_RightArrow,  LSHIFT(Key_Semicolon),  LSHIFT(Key_Quote),
-   Key_PcApplication,   Key_PageDown,   Key_End,               Key_Home,                   ___,             Key_Backslash,    Key_Pipe,
+   Key_PcApplication,   Key_PageDown,   Key_End,               Key_Home,              ___,             LSHIFT(Key_Slash),     Key_Pipe,
 
    ___, ___, Key_Delete, ___,
    ___
